@@ -48,6 +48,7 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-vividchalk'
+Plugin 'tpope/vim-rvm'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/bufexplorer.zip'
 Plugin 'vim-scripts/bufkill.vim'
@@ -57,4 +58,5 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 noremap <F3> :Autoformat<CR>
-
+set number
+set statusline=%{rvm#statusline()}-%f
