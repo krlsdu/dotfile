@@ -54,6 +54,7 @@ Plugin 'vim-scripts/bufexplorer.zip'
 Plugin 'vim-scripts/bufkill.vim'
 Plugin 'wgibbs/vim-irblack'
 Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'git@github.com:sunaku/vim-ruby-minitest.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -64,3 +65,4 @@ set statusline=%{rvm#statusline()}-%f
 :set tabstop=2
 :set shiftwidth=2
 :set expandtab
+:set completefunc=syntaxcomplete#Complete
