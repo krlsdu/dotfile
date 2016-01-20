@@ -88,3 +88,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+source /home/01560691131/.pgvm/pgvm_env

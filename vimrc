@@ -36,6 +36,7 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-liquid'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-ragtag'
@@ -54,10 +55,16 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/bufexplorer.zip'
 Plugin 'vim-scripts/bufkill.vim'
 Plugin 'wgibbs/vim-irblack'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'git@github.com:ecomba/vim-ruby-refactoring.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 noremap <F3> :Autoformat<CR>
 set number
-set statusline=%{rvm#statusline()}-%f
+set statusline=%{rvm#statusline()}-%f-%l,%c
+set nowrap
+set softtabstop=2
+set smarttab
+set expandtab
